@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Charity</title>
+</head>
+<body id="body">
+    <header id="header">
+        <div class="logo"><a href="index.html" title="Welcome to Charity" class="logo"><img src="./assest/Home Page/logo (1).png" alt="charity"></a></div>
+        <nav class="navigation">
+            <ul class="sidebar">
+                <li><a href="#" onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#312F2Dff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="cause.html">Cause</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                <li class="hideOnMoblie"><a href="story.html">Our Story</a></li>
+                <li class="hideOnMoblie"><a href="mission.html">Our Mission</a></li>
+                <li class="hideOnMoblie"><a href="cause.html">Cause</a></li>
+                <li class="hideOnMoblie"><a href="contact-us.html">Contact us</a></li>
+                <li onclick="showSidebar()" id="sidebar" class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#312F2Dff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="title-bar">
+        <div class="title-bar_container">
+            <div class="title-bar_content">
+                <h1>Become Volunteer</h1>
+                <span class="directory">Home/ Become Volunteer</span>
+            </div>
+        </div>
+    </section>
+    <section id="help-us">
+        <div class="help_us-container">
+            <h2 class="header">We need you, <span>Help Us Around</span></h2>
+            <div class="content-img">
+                <img src="./assest/become a volentee/help.jpg" height="100%" width="100%">
+            </div>
+        </div>
+    </section>
+    <section id="process">
+        <div class="process-container">
+            <div class="process-content">
+                <h2 class="header">How you can apply, <span>Here Is Process</span></h2>
+                <div class="process-col">
+                    <div class="step step1">
+                        <div class="box">
+                            <span class="step-value">Step 1</span>
+                        </div>
+                        <h3>Create An Account</h3>
+                        <p>Submit your basic information including Name, Address, and Contact details (including, Gmail or Facebook Id)</p>
+                    </div>
+                    <div class="step step2">
+                        <div class="box">
+                            <span class="step-value">Step 2</span>
+                        </div>
+                        <h3>Attach Image & Signature</h3>
+                        <p>Attach your passport size picture and signature; this is for authenticity. It also eases the way for us to create identity card for us.</p>
+                    </div>
+                    <div class="step step3">
+                        <div class="box">
+                            <span class="step-value">Step 3</span>
+                        </div>
+                        <h3>Submit Eduction & Job Detail</h3>
+                        <p>Now, there is a form, where you need to add education and professional detail, so that we can easily divide our team on the basis of role.</p>
+                    </div>
+                    <div class="step step4">
+                        <div class="box">
+                            <span class="step-value">Step 4</span>
+                        </div>
+                        <h3>Download Identity Card</h3>
+                        <p>Now, there is a form, where you need to add education and professional detail, so that we can easily divide our team on the basis of role.</p>
+                    </div>
+                </div>
+                <button class="btn-donate" onclick="showForm()">JOIN TODAY</button>
+            </div>
+            <div class="form-container popup">
+                <div class="form-header">
+                    <h1>Become a <strong>Volunteer</strong></h1>
+                    <div class="close-button" onclick="closeForm()">&times;</div>
+                </div>
+                <form id="volunteer-form" autocomplete="on">
+                    <div class="form-row">
+                        <div class="error" id="errorMessage2"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">First Name*</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name*</label>
+                            <input type="text" id="lastname" name="lastname" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" >
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipcode">ZIP code*</label>
+                            <input type="text" id="zipcode" name="zipcode" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reason">Why you join volunteer*</label>
+                            <textarea id="reason" name="reason" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn-donate" id="volunteer-btn">SUBMIT</button>
+                    </div>
+                </form>
+                <p class="note">Note: Note for volunteer form</p>
+            </div>
+            <div id="toastBox" class="toastBox"></div>
+        </div>
+        
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./assest/Home Page/logo (1).png" alt="">
+                    </div>
+                    <p>
+                        It is a fundraising association that works globally to provide support in education via charity. Their members have spread worldwide to ensure that fundraising amount to delivering at the right place and for the right purposes
+                    </p>
+                    <address>
+                        <span>
+                            <i class='bx bx-home'></i>
+                            <span class="detials">A-105, Sector-82, Agra, 282001, India</span>
+                        </span>
+                        <span>
+                            <i class='bx bxs-phone'></i>
+                            <span class="detials">+1 123 456 7890</span>
+                        </span>
+                        <span>
+                            <i class='bx bx-envelope'></i>
+                            <span class="detials">contact@charity.com</span>
+                        </span>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h6>Twitter Feed</h6>
+                    <div class="twitter">
+                        <div class="twitte">
+                            <p><span>@charity</span> We are a charity trust that dedicatedly work for several countries around the globe. Twitter Alerts will provide your some critical information about those people that need help of yours.</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                        <div class="twitte">
+                            <p><span>@charity</span> Use Twitter as the best conversation platform to make the people aware of the worst situation that many of Africans are facing. Tweet for them and raise fund in the best possible way.</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Newsletter Signup</h6>
+                    <p>Sign up your account to check our newsletter that will undoubtedly help you acquainted with current scenario.</p>
+                    <form action="#" class="sign-up" role="form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="submite-group">
+                            <button type="submit" class="btn-submite">Submit</button>
+                        </div>
+                    </form>
+                    <h6>Follow Us</h6>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-whatsapp'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-container">
+                <div class="copyright-content">
+                    <p>© Copyright 2014, All Rights Reserved by Charity Theme.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <!-- <script src="email.min.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>

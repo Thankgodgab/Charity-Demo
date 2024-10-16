@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --yellow: #ECC72Eff;
+    --dark: #32302f;
+    --grey: #727272;
+}
+
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: url('./assest/breadcrumb-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: auto;
+    backdrop-filter: blur(5px);
+}
+
+.payment-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    min-width: 320px;
+    margin: 30px 0px;
+    width: 100%;
+    transition: 0.7s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.payment-button {
+    background-color: var(--dark);
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.payment-button:hover {
+    background-color: var(--yellow);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--yellow);
+}
+
+.half-width {
+    display: inline-block;
+    width: 48%;
+}
+
+.half-width + .half-width {
+    margin-left: 10px;
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-container::before {
+    content: attr(data-flag);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+#selected-flag {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+select {
+    padding-left: 40px;
+}
+
+.total {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.submit-button {
+    background-color: var(--dark);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--yellow);
+}
+.error {
+    /* border-color: darkred; */
+    border: 1px solid red;
+    /* color: red; */
+}
+
+.error::placeholder {
+    /* color: red; */
+}

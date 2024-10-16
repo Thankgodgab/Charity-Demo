@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Charity</title>
+</head>
+<body onload="storySlideShow()">
+    <header id="header">
+        <div class="logo"><a href="index.html" title="Welcome to Charity" class="logo"><img src="./assest/Home Page/logo (1).png" alt="charity"></a></div>
+        <nav class="navigation">
+            <ul class="sidebar">
+                <li><a href="#" onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#312F2Dff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="cause.html">Cause</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                <li class="hideOnMoblie"><a href="story.html">Our Story</a></li>
+                <li class="hideOnMoblie"><a href="mission.html">Our Mission</a></li>
+                <li class="hideOnMoblie"><a href="cause.html">Cause</a></li>
+                <li class="hideOnMoblie"><a href="contact-us.html">Contact us</a></li>
+                <li onclick="showSidebar()" id="sidebar" class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#312F2Dff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="title-bar">
+        <div class="title-bar_container">
+            <div class="title-bar_content">
+                <h1>Our Story</h1>
+                <span class="directory">Home/ Our story</span>
+            </div>
+        </div>
+    </section>
+    <section id="read-story">
+        <div class="header-container">
+            <h2 class="header header-story">Who we are? <span> Read Our Story</span></h2>
+            <div class="header-content">
+                <div class="col-item">
+                    <img src="./assest/Home Page/img-slide-01.jpg" alt="" id="storySlider">
+                </div>
+                <div class="col-item x-last">
+                    <p class="top">
+                        Charity is an extensive platform, where anyone from any part of the world can donate the little part of the fortune to enhance living standard and education system as well as fulfill all other basic needs of deprived African children.
+                    </p>
+                    <p class="last">
+                        We do not raise fund for ourselves. Indeed, we use all the funds that come through charity in the best of the best way in terms of holistic development of children of all age groups. Our team is relentlessly working day and night to ensure that there will no hassle for our fund donor.
+                    </p>
+                    <p class="last">
+                        We work for children welfare, who are daily exploited and living in the condition deprived of healthy environment, proper eduction, food, cloth and medical care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="story-highlight">
+        <div class="highlight-container">
+            <h2 class="header">What we do? <span>See Our Works</span></h2>
+            <div class="highlight-content">
+                <div class="highlight-col" style="--i:0;">
+                    <h2>Personal Funds</h2>
+                    <div class="col-img">
+                        <img src="./assest/Home Page/img-slide-01.jpg">
+                    </div>
+                    <p>
+                        We support to you raise fund for charity causes that can be used to improve the quality of African children, who are living in the worst condition.
+                    </p>
+                    <button class="btn-donate story-readMore">Read More</button>
+                </div>
+                <div class="highlight-col" style="--i:1;">
+                    <h2>Creative Event</h2>
+                    <div class="col-img">
+                        <img src="./assest/Home Page/img-slide-02.jpg">
+                    </div>
+                    <p>
+                        Charity organizes different event to raise money for children’s welfare. We have generated around 80% of the resource through different events.
+                    </p>
+                    <button class="btn-donate story-readMore">Read More</button>
+                </div>
+                <div class="highlight-col" style="--i:2;">
+                    <h2>Sponsorships</h2>
+                    <div class="col-img">
+                        <img src="./assest/Home Page/img-slide-03.jpg">
+                    </div>
+                    <p>
+                        Our sponsorships program has not only helped us achieve mission, but also helped sponsor boost their businesses.
+                    </p>
+                    <button class="btn-donate story-readMore">Read More</button>
+                </div>
+                <div class="highlight-col" style="--i:3;">
+                    <h2>Investors</h2>
+                    <div class="col-img">
+                        <img src="./assest/Home Page/img-slide-04.jpg">
+                    </div>
+                    <p>
+                        Join us? Be a part of our family of investors, whose contribution have propelled us to reach to the envisioned goal without any problem.
+                    </p>
+                    <button class="btn-donate story-readMore">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="helping-chid">
+        <div class="helping_child-container">
+            <div class="helping_child-content">
+                <h2>Helping child in <b>Africa</b></h2>
+                <p>
+                    You are Just A Few Clicks Away To Bring Smile To Children.
+                </p>
+                <button class="btn-donate" onclick="volunteerpage()">Donate Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="team-container">
+            <h2 class="header">We are Real. <span>Meet The Team</span></h2>
+            <div class="team-content">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="./assest/our story/team-member1.jpg" alt="">
+                    </div>
+                    <p class="name">Jayden Strickland</p>
+                    <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook'></i></li>
+                            <li><i class='bx bxl-twitter'></i></li>
+                            <li><i class="bx bxl-instagram"></i></li>
+                            <li><i class='bx bxl-pinterest'></i></li>
+                            <li><i class='bx bxl-gmail'></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="./assest/our story/team-member2.jpg" alt="">
+                    </div>
+                    <p class="name">Aaron Hale</p>
+                    <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook'></i></li>
+                            <li><i class='bx bxl-twitter'></i></li>
+                            <li><i class="bx bxl-instagram"></i></li>
+                            <li><i class='bx bxl-pinterest'></i></li>
+                            <li><i class='bx bxl-gmail'></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="./assest/our story/team-member3.jpg" alt="">
+                    </div>
+                    <p class="name">Nathaniel Holmes</p>
+                    <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook'></i></li>
+                            <li><i class='bx bxl-twitter'></i></li>
+                            <li><i class="bx bxl-instagram"></i></li>
+                            <li><i class='bx bxl-pinterest'></i></li>
+                            <li><i class='bx bxl-gmail'></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="./assest/our story/team-member4.jpg" alt="">
+                    </div>
+                    <p class="name">Harry West</p>
+                    <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook'></i></li>
+                            <li><i class='bx bxl-twitter'></i></li>
+                            <li><i class="bx bxl-instagram"></i></li>
+                            <li><i class='bx bxl-pinterest'></i></li>
+                            <li><i class='bx bxl-gmail'></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./assest/Home Page/logo (1).png" alt="">
+                    </div>
+                    <p>
+                        It is a fundraising association that works globally to provide support in education via charity. Their members have spread worldwide to ensure that fundraising amount to delivering at the right place and for the right purposes
+                    </p>
+                    <address>
+                        <span>
+                            <i class='bx bx-home'></i>
+                            <span class="detials">A-105, Sector-82, Agra, 282001, India</span>
+                        </span>
+                        <span>
+                            <i class='bx bxs-phone'></i>
+                            <span class="detials">+1 123 456 7890</span>
+                        </span>
+                        <span>
+                            <i class='bx bx-envelope'></i>
+                            <span class="detials">contact@charity.com</span>
+                        </span>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h6>Twitter Feed</h6>
+                    <div class="twitter">
+                        <div class="twitte">
+                            <p><span>@charity</span> We are a charity trust that dedicatedly work for several countries around the globe. Twitter Alerts will provide your some critical information about those people that need help of yours.</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                        <div class="twitte">
+                            <p><span>@charity</span> Use Twitter as the best conversation platform to make the people aware of the worst situation that many of Africans are facing. Tweet for them and raise fund in the best possible way.</p>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Newsletter Signup</h6>
+                    <p>Sign up your account to check our newsletter that will undoubtedly help you acquainted with current scenario.</p>
+                    <form action="#" class="sign-up" role="form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="submite-group">
+                            <button type="submit" class="btn-submite">Submit</button>
+                        </div>
+                    </form>
+                    <h6>Follow Us</h6>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href="#" target="_blank"><i class='bx bxl-whatsapp'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-container">
+                <div class="copyright-content">
+                    <p>© Copyright 2014, All Rights Reserved by Charity Theme.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
